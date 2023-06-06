@@ -477,8 +477,21 @@
     color: #1752E9;
 }
 
-footer p {
-
+.copyright {
+    width: 265px;
+    height: 24px;
+    margin-left: 1025px;
+    margin-top: 83px;
+    
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    
+    
+    color: #A7ABB6;
 }
 
 footer h1 {
@@ -561,3 +574,4 @@ footer h1 {
 .iconItem i {
     font-size: 18px;
 }
+
