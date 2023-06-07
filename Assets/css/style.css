@@ -575,3 +575,218 @@ footer h1 {
     font-size: 18px;
 }
 
+/* about */
+.about-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.about-section .company-description {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-section .social-media-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.about-section .social-media-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #777;
+}
+
+/* Services */
+.services-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.service-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.service-card .service {
+    flex-basis: calc(33.33% - 20px);
+    max-width: 300px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.service-card .service img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.service-card .service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-card .service p {
+    font-size: 16px;
+    color: #777;
+}
+
+
+/* pricing */
+.pricing-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pricing-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.pricing-table th {
+    background-color: #f8f8f8;
+}
+
+.pricing-table td {
+    background-color: #fff;
+}
+
+.pricing-table tr:nth-child(even) td {
+    background-color: #f8f8f8;
+}
+
+.pricing-table td.highlight {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+/* portofolio */
+.slider-container {
+    position: relative;
+    width: 80%; /* Adjust the width as desired */
+    height: 300px; /* Adjust the height as desired */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.slider-track img {
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-arrow:hover {
+    background-color: #555;
+}
+
+.slider-arrow.prev {
+    left: 10px;
+}
+
+.slider-arrow.next {
+    right: 10px;
+}
+
+
+/* js */
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+
+  #scrollBtn:hover {
+    opacity: 1;
+  }
+
+  /* Additional styles for the arrow shape */
+  #scrollBtn::before {
+    content: "\2191"; /* Unicode for upwards arrow */
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
