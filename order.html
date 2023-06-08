@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pemesanan Desain</title>
+    <!-- Tambahkan link ke CSS Anda di sini -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4CAF50;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #333;
+            color: #ffffff;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #131313;
+        }
+
+
+        @media (max-width: 767px) {
+            form {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Pemesanan Desain</h1>
+
+    <form action="#" method="POST">
+        <div>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="jenis_desain">Jenis Desain:</label>
+            <select id="jenis_desain" name="jenis_desain" required>
+                <option value="">Pilih jenis desain</option>
+                <option value="Logo">UI/UX Design</option>
+                <option value="Brochure">Prototype</option>
+                <option value="Website">Web Design</option>
+                <option value="Website">Landing Page</option>
+                <option value="Website">Mobile Design</option>
+                <!-- Tambahkan opsi lain sesuai kebutuhan -->
+            </select>
+        </div>
+        <div>
+            <label for="deskripsi">Deskripsi:</label>
+            <textarea id="deskripsi" name="deskripsi" required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Kirim" class="back-button" onclick="alert('Kamu akan diarahkan ke customer service')">
+            <button class="back-button" onclick="window.location.href='home.html'">Back to Home</button>
+        </div>
+    </form>
+
+    <!-- Tambahkan script JavaScript Anda di sini jika diperlukan -->
+</body>
+
+</html>

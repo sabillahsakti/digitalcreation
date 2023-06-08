@@ -593,8 +593,24 @@
 
 /* about */
 .about-section {
+    position: relative;
     padding: 50px;
     text-align: center;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../videos/companyvideo.mp4') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5;
+    filter: brightness(0.5);
 }
 
 .about-section h2 {
@@ -654,6 +670,7 @@
         font-size: 20px;
     }
 }
+
 
 
 /* Services */
