@@ -18,29 +18,29 @@
     </style>
 
     <script>
-        // Get the button element
-        const scrollBtn = document.getElementById("scrollBtn");
+        window.onscroll = function () {
+            scrollFunction();
+        };
 
-        // Show the button when the user scrolls down 20% of the viewport height
-        window.addEventListener("scroll", function () {
-            if (window.scrollY > window.innerHeight * 0.2) {
-                scrollBtn.style.display = "block";
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollBtn").style.display = "block";
             } else {
-                scrollBtn.style.display = "none";
+                document.getElementById("scrollBtn").style.display = "none";
             }
-        });
+        }
 
-        // Scroll smoothly to the top of the document when the button is clicked
         function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
         }
     </script>
 </head>
 
 <body style="background: #FFFFFF;">
+    <div id="scrollBtn" onclick="scrollToTop()">
+        &uarr;
+    </div>
     <div class="navbar">
         <div class="title">
             Digital Creation
@@ -163,9 +163,6 @@
             </div>
         </div>
     </section>
-
-
-    <button id="scrollBtn" onclick="scrollToTop()" title="Scroll to Top"></button>
 
 </body>
 

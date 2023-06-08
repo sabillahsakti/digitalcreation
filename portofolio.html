@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +18,10 @@
 
         .slider-container {
             position: relative;
-            max-width: 100%;
+            max-width: 1024px;
+            /* Mengatur lebar maksimum sesuai ukuran gambar */
+            margin: 0 auto;
+            /* Untuk membuat slider berada di tengah */
             height: 400px;
             overflow: hidden;
         }
@@ -28,7 +32,12 @@
         }
 
         .slider-track img {
-            flex: 0 0 100%;
+            flex: 0 0 auto;
+            /* Mengatur gambar agar tidak melebar */
+            width: 100%;
+            /* Mengisi ruang yang tersedia dalam slide */
+            height: auto;
+            /* Mengatur tinggi gambar agar proporsional */
         }
 
         .slider-arrow {
@@ -59,12 +68,13 @@
         }
     </style>
 </head>
+
 <body>
     <div class="navbar">
         <div class="title">
             Digital Creation
         </div>
-    
+
         <div class="menu-container">
             <div class="menu">
                 <a href="home.html">Home</a>
@@ -73,7 +83,7 @@
                 <a href="portfolio.html">Portfolio</a>
                 <a href="pricing.html">Pricing</a>
             </div>
-    
+
             <div class="ltalk-container">
                 <button class="ltalk" onclick="window.location.href ='order.html';">
                     Let's Talk
@@ -82,11 +92,12 @@
         </div>
     </div>
 
-    <div class="slider-container">
+    <div class="slider-container" onmouseover="stopAutoSlide()" onmouseout="startAutoSlide()">
         <div class="slider-track">
-            <img src="Assets/images/webdesign.png" alt="Slide 1">
-            <img src="Assets/images/uiux.png" alt="Slide 2">
-            <img src="Assets/images/landingpage.png" alt="Slide 3">
+            <img src="Assets/images/porto1.png" alt="Slide 1">
+            <img src="Assets/images/porto2.png" alt="Slide 2">
+            <img src="Assets/images/porto3.png" alt="Slide 3">
+            <img src="Assets/images/porto4.png" alt="Slide 3">
         </div>
         <button class="slider-arrow prev" onclick="changeSlide(-1)">&lt;</button>
         <button class="slider-arrow next" onclick="changeSlide(1)">&gt;</button>
@@ -98,7 +109,7 @@
             <div class="pSingkat">
                 <p>
                     Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa.
-                    
+
                 </p>
                 <div class="smf">
                     <i class="fab fa-instagram"></i>
@@ -109,10 +120,10 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="right-content">
             <div class="contact">
-    
+
                 <div class="iconContact">
                     <h2>Contact</h2>
                     <div class="iconItem">
@@ -131,7 +142,8 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="Assets/js/javascript.js"></script>
 </body>
+
 </html>
